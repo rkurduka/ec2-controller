@@ -258,6 +258,7 @@ class EC2Validator:
             return None
         except self.ec2_client.exceptions.ClientError:
             return None
+        
 
     def assert_launch_template(self, launch_template_id: str, exists=True):
         res_found = False
